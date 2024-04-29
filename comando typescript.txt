@@ -1,0 +1,67 @@
+npm init -y
+
+npm install typescript --save-dev
+
+tsc --init
+
+npm install fastify @fastify/cors      --instala o fastify
+
+npm install tsx
+
+npm install @types/node --save-dev     --instala o node
+
+npm run dev                            --roda a aplicação
+
+npm install prisma --save-dev          --faz a instalação do prisma
+
+npm install @prisma/client             --faz a instalação do prisma
+
+npx prisma init                        --inicia o prisma
+
+npx prisma generate
+
+
+
+check-list:
+[] - Entender a atividade, isso envolve ver a atividade
+[] - Instalar as dependencias
+[] - Opcional - Criar um dockerfile e um docker-compose.yml pra criar o container do banco escolhido
+[] - Criar as invalidade
+[] - Da um check se o servidor está funcionando
+[] - Criar a service para a entidade escolhida, e fazer o CRUD
+[] - Fazer a controller
+[] - Criar as rotas no arquivo de mortas
+[] - Testar as rotas
+[] - Partir para as rotas com regra de negócio
+[] - Implementa alguns quest
+
+	
+Entidades:
+
+- Usuário:
+	Atributos: ID, nome de usuário, peso, senha, e-mail.
+	
+
+- Tarefa:
+	Atributos: ID, título, descrição, data de criação, data de conclusão, tipo, categoria (opcional), status (pendente, em andamento, concluída), e usuário associado.
+
+- Categoria:
+	Atributos: ID, nome, cor (para identificação visual).
+
+Requisitos das Rotas (OPICIONAL - FAÇA POR ÚLTIMO):
+
+Autenticação:
+
+
+Rota de login de usuário.
+
+Tarefas:
+
+
+Rota para obter detalhes de uma tarefa específica.
+
+
+Categorias:
+
+Rota para obter detalhes de uma categoria específica.
+
